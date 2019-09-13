@@ -14,7 +14,7 @@
 
 <body>
     <h1> Crystal Collector</h1>
-    <div class=directions>
+    <div class="directions">
         <h2>Directions:</h2>
         <!-- Update directions -->
         <p> You will be given a random number at the start of the game.</p>
@@ -26,18 +26,25 @@
         <p>Each time when the game starts, the game will change the value of each crsytal</p>
     </div>
 
-    <h3>Number to Guess: <span id="number-to-gyess"></span></h3>
+    <h3>Number to Guess: <span id="number-to-guess"></span></h3>
 
     <div class="shapes">
         <div class="row">
-            <div class="col" id=bluehexagon> <img src="assets/images/blue hexagon.jpg" alt="blue hexagon"></div>
-            <div class="col" id=clearsquare> <img src="assets/images/clear square.jpg" alt="clear square"></div>
+            <div class="col" id="bluehexagon"> <img src="assets/images/blue hexagon.jpg" alt="blue hexagon"></div>
+            <div class="col" id="clearsquare"> <img src="assets/images/clear square.jpg" alt="clear square"></div>
             <div class="w-100"></div>
-            <div class="col" id=greenheart> <img src="assets/images/green heart.jpg" alt="green heart"></div>
-            <div class="col" id=purplediamond> <img src="assets/images/purple diamond.png" alt="purple diamond"></div>
+            <div class="col" id="greenheart"> <img src="assets/images/green heart.jpg" alt="green heart"></div>
+            <div class="col" id="purplediamond"> <img src="assets/images/purple diamond.png" alt="purple diamond"></div>
         </div>
     </div>
+    <div>
+        <h4>Your Total Score: <span id="user-total"></span></h4>
+    </div>
 
+    <div class="game-tally">
+        <p id="wins-text">Wins:</p>
+        <p id="loss-text">Losses:</p>
+    </div>
 </body>
 
 </html>
