@@ -67,7 +67,7 @@ $(document).ready(function () {
         crystalCol.addClass("col-sm-3");
 
         var crystalImage = $("<img>");
-        crystalImage.addClass("crystal");
+        crystalImage.addClass("crystals");
 
         crystalImage.attr("src", shapes[i]);
 
@@ -77,9 +77,9 @@ $(document).ready(function () {
     }
 
     $(".crystals").on("click", function () {
-        var crystalNumber = ($(this).attr("data-crsytalnumber"));
+        var crystalNumber = ($(this).attr("data-crystalnumber"));
 
-        crystalNumber = parseInt(crsytalnumber);
+        crystalNumber = parseInt(crystalNumber);
 
         counter += crystalNumber;
         console.log(crystalNumber);
