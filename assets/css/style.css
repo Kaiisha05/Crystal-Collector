@@ -1,11 +1,11 @@
-/* .col-sm-3 {
+.col-sm-3 {
 border: solid 2px black
-} */
+}
 img {
     width: 150px;;
     align-content: center
 }    
-.crystal-image {
-    width: 150px;
-    height: 150px;
-}
+/* .crystals {
+    width: 200px;
+    height: 200px;
+} */
