@@ -34,7 +34,7 @@ function startGame() {
 function determineResults() {
 
     if (counter === targetNumber) {
-        // $("#results").text('You Win!')
+        $("#results").text('You Win!')
         // try the 1st version, but if not go with the 2nd version
         // alert("You Win!");
         wins++;
