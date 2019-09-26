@@ -8,11 +8,7 @@ var numberChoices = [];
 var shapes = ["assets/images/blue hexagon.jpg", "assets/images/clear square.jpeg", "assets/images/green heart.jpg", "assets/images/pink diamond.jpeg"]
 console.log(shapes);
 
-targetNumber = Math.floor(Math.random() * 121) + 19;
-    //test that a random number is chosen 
-    console.log(targetNumber);
-    // display random number within html
-    $("#number-to-guess").text(targetNumber);
+
 
 // function to run the actual game
 function startGame() {
@@ -29,6 +25,11 @@ function startGame() {
 
         console.log(numberChoices);
     }
+    targetNumber = Math.floor(Math.random() * 121) + 19;
+    //test that a random number is chosen 
+    console.log(targetNumber);
+    // display random number within html
+    $("#number-to-guess").text(targetNumber);
 }
 
 function determineResults() {
@@ -48,8 +49,8 @@ function determineResults() {
     }
 
     else if (counter > targetNumber) {
-        alert("You lose!")
-        // $("#results").text('You Lose!')
+        // alert("You lose!")
+        $("#results").text('You Lose!')
         // try the 1st version, but if not go with the 2nd version
         losses++;
         document.getElementById("losses-text").textContent = losses;
