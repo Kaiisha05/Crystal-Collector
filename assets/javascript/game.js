@@ -18,14 +18,14 @@ function startGame() {
     // iterate through 4 numbers that are randomly selected between 1-12. Then assign those random numbers to the var numbers that will hold them as an array. Established the var numbers as an array by setting it equal to empty brackets
     for (var s = 0; s < 4; s++) {
 
-        var shapeNumbers = Math.floor(Math.random() * 13) + 1;
+        var shapeNumbers = (Math.floor(Math.random() * 13) + 1);
         // test that random numbers do show
         console.log(shapeNumbers);
         numberChoices.push(shapeNumbers);
 
         console.log(numberChoices);
     }
-    targetNumber = Math.floor(Math.random() * 121) + 19;
+    targetNumber = (Math.floor(Math.random() * 121) + 19);
     //test that a random number is chosen 
     console.log(targetNumber);
     // display random number within html
@@ -44,6 +44,7 @@ function determineResults() {
         // $("#wins-text").text(wins)
 
         counter = 0;
+
         $("#user-total").text(counter);
 
         startGame();
@@ -57,7 +58,10 @@ function determineResults() {
         document.getElementById("losses-text").textContent = losses;
 
         counter = 0;
+
         $("#user-total").text(counter);
+
+
 
         startGame();
     }
