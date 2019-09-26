@@ -15,22 +15,22 @@
 
 <body>
     <h1> Crystal Collector</h1>
+
     <div class="directions">
         <h2>Directions:</h2>
         <!-- Update directions -->
-        <p> You will be given a random number at the start of the game.</p>
-        <p>There are 4 crystals below. By clicking crystal you will add a specific amount of points to your total score.
-        </p>
-        <p>You win the game by matching your total score to the random number, you lose the game it your total goes
-            above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time when the game starts, the game will change the value of each crsytal</p>
+        <li> You will be given a random number at the start of the game.</li>
+        <li>There are 4 crystals below. By clicking crystal you will add a specific amount of points to your total
+            score.
+        </li>
+        <li>The game is won when by Your Total Score is equal to Number to Guess. If Your Total Score is higher, you lose.</li>
+        <li>Each time when the game starts, the game will change the value of each crystal</li>
     </div>
 
     <h3>Number to Guess: <span id="number-to-guess"></span></h3>
 
     <!-- <div class="crystals"> -->
-        <div>
+    <div id="crystal-home">
         <!-- TAKE OUT THE GRID ELEMENT, DOESN'T SEEM NEEDED, CLASSES AND IDs MAY BE OVERKILL -->
         <div class="row">
             <!-- <div class="col-sm-3 A"><img>A</div> -->
@@ -40,14 +40,16 @@
             <!-- <div class="col-sm-3 C"><img>C</div>
             <div class="col-sm-3 D"><img>D</div> -->
         </div>
+    </div>
         <div>
+            <br>
             <h4>Your Total Score: <span id="user-total"></span></h4>
         </div>
 
         <div>
             <h2 id="results"></h2>
         </div>
-
+        <br>
         <div class="game-tally">
             <p>Wins: <span id="wins-text"></span></p>
             <p>Losses: <span id="losses-text"></span></p>

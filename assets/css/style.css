@@ -1,11 +1,39 @@
-.col-sm-3 {
-border: solid 2px black
-}
+
 img {
-    width: 150px;;
-    align-content: center
+    width: 150px;
+    /* align-content: center */
 }    
 /* .crystals {
     width: 200px;
     height: 200px;
 } */
+
+h1, h2, h3, h4 {
+    text-align: center;
+  
+}
+.directions {
+    background-color: lightgray;
+    border: solid black 2px;
+    margin: 25px 20px;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.game-tally {
+    background-color: lightgray;
+    border: solid black 2px;
+    margin: 0 400px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+body {
+    background-image: url(https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/tan-concrete-grunge-texture-12-768x510.jpg);
+    }
+#crystal-home {
+       margin-left: 300px;
+   } 
