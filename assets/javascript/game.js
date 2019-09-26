@@ -30,6 +30,7 @@ function startGame() {
     console.log(targetNumber);
     // display random number within html
     $("#number-to-guess").text(targetNumber);
+    // this has to be outside the scope of the iteration for it to reset each game
 }
 
 function determineResults() {
